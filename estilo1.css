@@ -1,0 +1,231 @@
+*,
+*:before,
+:after {
+    box-sizing: inherit;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    padding: 30px;
+    background-image: url(imagenes/fondo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.lista {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.list:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil {
+    background-image: url(imagenes/perfil\ vacio.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo {
+    width: 60%;
+    text-align: justify;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-img {
+    height: 240px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.proyecto-1 {
+    background-image: url(imagenes/buscador.png);
+}
+
+.proyecto-2 {
+    background-image: url(imagenes/parqueo.jpg);
+}
+
+.proyecto-3 {
+    background-image: url(imagenes/app\ banca.png);
+}
+
+.card a {
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: block;
+    margin: 10px 10px;
+}
+
+.card p {
+    margin-bottom: 40px;
+}
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.descarga {
+    background-color: greenyellow;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+}
+
+.descarga:hover {
+    background-color: greenyellow;
+    color: black;
+    transition: all 1s ease;
+    transform: scale(1.03);
+}
+
+.footer {
+    color: white;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textbox {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid darkblue;
+}
+
+.textbox input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+}
+
+.genero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.botones {
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+}
+
+@media(max-width: 600px) {
+    .menubar {
+        flex-wrap: wrap;
+    }
+    .lista {
+        flex-basis: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 503px) {
+    .lista {
+        flex-basis: 90%;
+    }
+}
